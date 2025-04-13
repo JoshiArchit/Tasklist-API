@@ -14,6 +14,10 @@ Or use this link to get the exact configuration : [Project Configuration](https:
 
 ## Deploy
 Deployment instructions coming soon...
+### Environment variables and confidential parameters
+- Use the .env.example file to find the required environment variables and create a .env file (don't forget to add it to .gitignore!)
+- The environment variables are also used in the application.properties and docker-compose file.
+- For local development you can add it in the Run Configurations in IntelliJ.
 
 ## Maven Command Cheatsheet (Windows)
 - `./mvnw install` — Build the project
