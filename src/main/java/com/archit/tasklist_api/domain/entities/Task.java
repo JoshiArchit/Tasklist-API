@@ -24,7 +24,7 @@ public class Task {
     @Column( name = "id", updatable = false, nullable = false )
     private UUID id;
 
-    @Column( name = "id", nullable = false )
+    @Column( name = "title", nullable = false )
     private String title;
 
     @Column( name = "description" )
@@ -39,8 +39,8 @@ public class Task {
     @Column( name = "priority" )
     private TaskPriority priority;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "task_list_id")
+    @ManyToOne( fetch = FetchType.LAZY )
+    @JoinColumn( name = "task_list_id" )
     private TaskList taskList;
 
     @Column( name = "created", nullable = false )
