@@ -31,7 +31,8 @@ public class TaskMapperImpl implements TaskMapper {
                 task.getDescription(),
                 task.getDueDate(),
                 task.getPriority(),
-                task.getStatus()
+                task.getStatus(),
+                task.getUpdated()
         );
     }
 }
